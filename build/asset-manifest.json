@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.js": "./static/js/main.452f3712.js",
+    "static/js/787.9b9c0edf.chunk.js": "./static/js/787.9b9c0edf.chunk.js",
+    "static/media/bon1.jpg": "./static/media/bon1.6624447991a4d46b9c3c.jpg",
+    "static/media/booking1mobile.png": "./static/media/booking1mobile.7477f69ff59c048c4e2e.png",
+    "static/media/uniqlo-1-mobile.png": "./static/media/uniqlo-1-mobile.7dc0bdbdeecd20ddeff7.png",
+    "static/media/uniqlo-1-laptop.png": "./static/media/uniqlo-1-laptop.1dba49bd240a44a6f39b.png",
+    "static/media/qwer.png": "./static/media/qwer.ccfd84752c882c2949e0.png",
+    "static/media/How-to-stay-updated-with-latest-advancements-in-mechanical-engineering.webp": "./static/media/How-to-stay-updated-with-latest-advancements-in-mechanical-engineering.692ea75b24235cdf5b8e.webp",
+    "static/media/booking1laptop.png": "./static/media/booking1laptop.3d9516af672c6b15f64e.png",
+    "static/media/SPIRITSFULLY-blog-post-website.png": "./static/media/SPIRITSFULLY-blog-post-website.b0eb5290f8e2d461d178.png",
+    "static/media/image_2022-11-22_100700045.png": "./static/media/image_2022-11-22_100700045.f9497602759e66c41846.png",
+    "static/media/offer-banner.webp": "./static/media/offer-banner.2e60eefc09cd1d311e46.webp",
+    "static/media/express.png": "./static/media/express.6ee6645eea768ebf902d.png",
+    "static/media/styled-components.svg": "./static/media/styled-components.c958c5f9271ec67616a5dcc29d086177.svg",
+    "static/media/react.svg": "./static/media/react.6f41dc1b51f5f80e317dc0977b3c1bc6.svg",
+    "static/media/github.svg": "./static/media/github.0aab637846cca5387bb673b54358f0a4.svg",
+    "static/media/javascript.svg": "./static/media/javascript.333c9ca301c4295b40b47e89442f536e.svg",
+    "static/media/css.svg": "./static/media/css.1a0090ba231c6c275957e38da509f95a.svg",
+    "static/media/html.svg": "./static/media/html.a25792db5f81776a70edffa8f82bb8ec.svg",
+    "static/media/git.svg": "./static/media/git.2a42685e7d032e947150f389ef673989.svg",
+    "index.html": "./index.html",
+    "static/media/npm.svg": "./static/media/npm.ed0fc975d45dcb455077a1104a3fa4b1.svg",
+    "main.452f3712.js.map": "./static/js/main.452f3712.js.map",
+    "787.9b9c0edf.chunk.js.map": "./static/js/787.9b9c0edf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.452f3712.js"
+  ]
+}
