@@ -1,21 +1,44 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { IconContext } from "react-icons";
-import { IoIosCall } from "react-icons/io";
-import { SiLinkedin, SiGithub, SiGmail } from "react-icons/si";
-import profileImage from "../../assets/ai-robot-hand-close-human-hand_23-2151015302.jpg"; // Example profile image import
+import { SiGmail } from "react-icons/si";
+import profileImage from "../../assets/How-to-stay-updated-with-latest-advancements-in-mechanical-engineering.webp"; // Example profile image import
+
+// Keyframes for animations
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const slideIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 const StyledHome = styled.div`
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   background: url(${profileImage}) no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   overflow: hidden;
-  padding-left: 5%;
+  text-align: center;
+  padding: 0 2rem; /* Add horizontal padding for small screens */
 `;
 
 const Overlay = styled.div`
@@ -24,53 +47,53 @@ const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 `;
 
 const HeroSection = styled.div`
   position: relative;
   z-index: 1;
-  text-align: left;
-  max-width: 600px;
+  max-width: 700px; /* Increase max-width for better text visibility */
   padding: 2rem;
 `;
 
 const HeroTitle = styled.h1`
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 3rem;
+  font-weight: 800; /* Boldest font weight for emphasis */
+  font-size: 5rem; /* Significantly larger font size */
   margin-bottom: 1rem;
-  display: flex;
-  align-items: center; /* Align items vertically */
-`;
-
-const NinjaEmoji = styled.span`
-  margin-left: 0.5rem; /* Adjust spacing between text and emoji */
-  font-size: 3rem; /* Adjust size of emoji */
-  color: #fff; /* Set color to white */
+  color: #fff;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Strong text shadow for prominence */
+  line-height: 1.2; /* Adjust line height for better spacing */
+  animation: ${slideIn} 1s ease-out;
+  text-transform: uppercase; /* Convert text to uppercase */
 `;
 
 const HeroText = styled.p`
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 500;
   line-height: 1.6;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+  margin-top: 1rem;
+  text-transform: uppercase; /* Convert text to uppercase */
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+  animation: ${fadeIn} 1.5s ease-out;
 `;
 
 const SocialIcons = styled.div`
-  margin-top: 1rem;
+  margin-top: 2rem;
+  animation: ${fadeIn} 2s ease-out;
 
   & > a {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #fff;
-    margin-right: 1rem;
-    transition: color 0.3s ease;
+    margin: 0 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-      color: #007bff;
+      color: #007bff; /* Highlight color on hover */
+      transform: scale(1.1); /* Slightly enlarge icons on hover */
     }
   }
 `;
@@ -89,40 +112,20 @@ const Home = () => {
   }
 
   return (
-    <IconContext.Provider value={{ size: "2rem" }}>
+    <IconContext.Provider value={{ size: "2.5rem" }}>
       <StyledHome id="home">
         <Overlay />
         <HeroSection className="fade-in">
           <HeroTitle>
-            THE TOP 5% <NinjaEmoji>🥷</NinjaEmoji>
+            {greeting}<br />
+            I AM BILLY
           </HeroTitle>
-          <HeroText>{greeting}</HeroText>
-          <HeroText>HEY, I'M KIEYP</HeroText>
           <HeroText>
-            A DATA ANALYST AND A SOFTWARE DEV .
+            WELCOME TO MY PERSONAL SPACE WHERE INNOVATION MEETS PASSION.
           </HeroText>
           <SocialIcons className="social-icons">
-            <a
-              href="https://github.com/kieyp"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <SiGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/kipbon/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <SiLinkedin />
-            </a>
-            <a href="mailto:cheruiyotbony@gmail.com" aria-label="Email">
+            <a href="mailto:Billymkings@gmail.com" aria-label="Email">
               <SiGmail />
-            </a>
-            <a href="tel:0720455615" aria-label="Phone">
-              <IoIosCall />
             </a>
           </SocialIcons>
         </HeroSection>
